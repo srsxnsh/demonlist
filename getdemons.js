@@ -2,14 +2,14 @@ async function get_demons() {
   
   const confresponse = await fetch("./conf.json")
   const configs = await confresponse.json();
-  console.log(configs)
+  console.log(configs);
 
   const container = document.getElementById("demon-list");
   const usernamecontainer = document.getElementById("username")
   const api_url = "https://gddlapi.srsxnsh.workers.dev";
   const userid = configs.userid;
   const username = configs.username;
-
+  console.log(userid);
   usernamecontainer.innerHTML = `
     <h1 class="text-5xl text-center text-bold"> ${username}'s Demonlist </h1> 
     `;
