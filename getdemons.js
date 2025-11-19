@@ -1,6 +1,6 @@
 async function get_demons() {
   
-  const confresponse = await fetch("./conf.json")
+  const confresponse = await fetch("/demonlist/conf.json")
   const configs = await confresponse.json();
   console.log(configs);
 
