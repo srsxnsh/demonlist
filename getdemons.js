@@ -20,8 +20,7 @@ async function get_demons() {
   link.href = fontURL;
   document.head.appendChild(link);
 
-  document.body.style.fontFamily = fontname;
-
+  document.body.style.fontFamily = `'${fontname}', ui-sans-serif, system-ui, sans-serif`;
 
   usernamecontainer.innerHTML = `
     <h1 class="text-5xl text-center text-bold"> ${username}'s Demonlist </h1> 
