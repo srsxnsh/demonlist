@@ -12,7 +12,7 @@ async function get_demons() {
   const username = configs.username;
   console.log(userid);
 
-  const fontURL = configs.font;
+  const fontURL = configs.fontURL;
   const fontname = configs.fontname;
 
   const link = document.createElement("link");
@@ -20,7 +20,7 @@ async function get_demons() {
   link.href = fontURL;
   document.head.appendChild(link);
 
-  document.body.style.fontFamily = fontname
+  document.body.style.fontFamily = fontname;
 
 
   usernamecontainer.innerHTML = `
