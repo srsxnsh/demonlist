@@ -7,9 +7,19 @@ async function get_demons() {
   const container = document.getElementById("demon-list");
   const usernamecontainer = document.getElementById("username")
   const api_url = "https://gddlapi.srsxnsh.workers.dev";
+
   const userid = configs.userid;
   const username = configs.username;
   console.log(userid);
+
+  const fontfam = configs.font;
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = fontfam;
+  document.head.appendChild(link);
+
+
+
   usernamecontainer.innerHTML = `
     <h1 class="text-5xl text-center text-bold"> ${username}'s Demonlist </h1> 
     `;
