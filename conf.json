@@ -3,11 +3,7 @@
   "username": "occulii brocculii",
 
   "fontURL": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap",
-  "fontname": "JetBrains Mono",
-
-  "$comment": "userid: this should be a number. username: whatever you like.
-                fontURL: google fonts url to your chosen font.
-                fontname: name of your font."
+  "fontname": "JetBrains Mono"
 
 
 
