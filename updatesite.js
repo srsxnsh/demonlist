@@ -67,7 +67,7 @@ async function get_demons(configs, api_url) {
 
 const sitename = 'demonlist';
 const api_url = "https://gddlapi.srsxnsh.workers.dev";
-const confresponse = await fetch(`/${sitename}/conf.json`);
+const confresponse = await fetch(`./${sitename}/conf.json`);
 const configs = await confresponse.json();
 
 
