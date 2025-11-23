@@ -1,4 +1,10 @@
-async function style_site(configs) {
+async function style_site() {
+
+  const sitename = 'demonlist';
+  const confresponse = await fetch("/${sitename}/conf.json");
+  const configs = await confresponse.json();
+
+
 
   const fontURL = configs.fontURL;
   const fontname = configs.fontname;
@@ -13,7 +19,12 @@ async function style_site(configs) {
 }
 
 
-async function customise_site(configs) {
+async function customise_site() {
+
+  const sitename = 'demonlist';
+  const confresponse = await fetch("/${sitename}/conf.json");
+  const configs = await confresponse.json();
+
 
   const username = configs.username;
   const usernamecontainer = document.getElementById("username")
@@ -26,7 +37,14 @@ async function customise_site(configs) {
 }
 
 
-async function get_demons(configs, url) {
+async function get_demons() {
+
+  const sitename = 'demonlist';
+  const api_url = "https://gddlapi.srsxnsh.workers.dev";
+
+  const confresponse = await fetch("/${sitename}/conf.json");
+  const configs = await confresponse.json();
+
 
   const container = document.getElementById("demon-list");
   const api_url = url
@@ -67,16 +85,8 @@ async function get_demons(configs, url) {
 }
 
 
-const sitename = 'demonlist';
-const api_url = "https://gddlapi.srsxnsh.workers.dev";
 
-const confresponse = await fetch("/${sitename}/conf.json");
-const configs = await confresponse.json();
-console.log(configs);
-
-
-
-style_site(configs);
-customise_site(configs);
-get_demons(configs, api_url);
+style_site();
+customise_site();
+get_demons();
 
