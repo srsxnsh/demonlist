@@ -10,8 +10,7 @@ ____
 
 ## How to make your own:
 #### Fork
-- **Fork this repo:** the fork needs to be named '**demonlist**' or the config might break.
-- If the fork is named otherwise, you will have to edit the name in **line 3** of **getdemons.js** to fit your repo.
+- **Fork this repo** 
 #### Edit conf.json:
 - **userid**: Your GDDL userid. This should be a number.
 - **username**: This can be anything you want.
