@@ -12,6 +12,11 @@
     --text-5xl--line-height: 1;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --bodytext: #6272a4;
+    --bodybg: #282a36;
+    --h1text: #50fa7b;
+    --h2text: #ff5555;
+
   }
 }
 @layer base {
@@ -179,20 +184,19 @@
   }
 }
 body {
-  color: #6272a4;
+  color: var(--bodytext);
   margin: 0;
-  background-color: #282a36;
+  background-color: var(--bodybg);
 }
 header {
-  background-color: ;
   padding: 20px;
   text-align: center;
 }
 h1 {
   margin: 0;
-  color: #50fa7b;
+  color: var(--h1text);
 }
 h2 {
   margin: 0;
-  color: #ff5555;
+  color: var(--h2text);
 }

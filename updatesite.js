@@ -8,6 +8,26 @@ async function style_site() {
   document.head.appendChild(link);
 
   document.body.style.fontFamily = `'${configs.fontname}', ui-sans-serif`;
+
+  const targettheme = configs.theme;
+  try {
+  const themeresponse = await fetch(`./themes/${targettheme}.json`);
+  if (!themeresponse.ok) {throw new Error('lmao i couldnt find the theme, defaulting to dracula');}
+
+  const theme = await themeresponse.json();
+  const root = document.documentElement;
+  const ignore = ['name', 'creator'];
+  for (const [key, value] of Object.entries(theme)) {
+      if (ignore.includes(key)) {
+        continue;
+      }
+
+      root.style.setProperty(`--${key}`, value);
+    }
+  } catch (err) {
+    console.error(`Theme load failed: ${configs.theme}`, err);
+  }
+
 }
 
 async function customise_site() {
