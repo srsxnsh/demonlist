@@ -18,7 +18,7 @@ ____
 - **fontname**: The name of your chosen font.
 - **theme**: The name of your chosen theme, according to the name of the file in ./themes.
 #### Theme:
-- Pick a theme in `./themes` (more coming soon) or **create your own** by duplicating and renaming an existing theme and changing the colours. Name and Creator are not used at all in the actual site, they are purely for credit. The variable names are very self explanatory. Use **Hex**.
+- Pick a theme in `./themes` or **create your own** by duplicating and renaming an existing theme and changing the colours. Name and Creator are not used at all in the actual site, they are purely for credit. The variable names are very self explanatory. Use **Hex**.
 #### Deploy
 - **Deploy** site with GitHub Pages, or another service.
 
@@ -27,6 +27,7 @@ ____
 ## Coming Soon
 - Sort menu.
 - More stats.
+- Even more themes.
 
 ___
 
