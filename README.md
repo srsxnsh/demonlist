@@ -25,9 +25,9 @@ ____
 ____
 
 ## Coming Soon
-- Sort menu.
-- More stats.
 - Even more themes.
+- Custom background images.
+- Better custom theming support.
 
 ___
 
